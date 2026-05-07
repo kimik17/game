@@ -1,0 +1,22 @@
+{
+    "version": 1,
+    "revision": 0,
+    "rules": [
+        {
+            "primary-output": "x64\\Debug\\warrior.h.obj",
+            "outputs": [
+                "D:\\C++\\game\\game\\x64\\Debug\\vc145.pdb",
+                "x64\\Debug\\",
+                "D:\\C++\\game\\game\\x64\\Debug\\warrior.h.ifc"
+            ],
+            "provides": [
+                {
+                    "logical-name": "warrior.h",
+                    "source-path": "d:\\c++\\game\\game\\warrior.h",
+                    "lookup-method": "absolute"
+                }
+            ],
+            "requires": []
+        }
+    ]
+}

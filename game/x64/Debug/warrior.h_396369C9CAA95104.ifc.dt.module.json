@@ -1,0 +1,22 @@
+{
+    "version": 1,
+    "revision": 0,
+    "rules": [
+        {
+            "primary-output": "x64\\Debug\\warrior.obj",
+            "outputs": [
+                "x64\\Debug\\warrior.h_396369C9CAA95104.ifc.dt.module.json",
+                "x64\\Debug\\warrior.h_396369C9CAA95104.ifc.dt.d.json",
+                "x64\\Debug\\warrior.h.ifc"
+            ],
+            "provides": [
+                {
+                    "logical-name": "D:\\C++\\game\\game\\warrior.h",
+                    "source-path": "d:\\c++\\game\\game\\warrior.h",
+                    "lookup-method": "absolute"
+                }
+            ],
+            "requires": []
+        }
+    ]
+}
