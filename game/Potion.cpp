@@ -63,12 +63,12 @@ void AlchemyWorkshop::SearchByIngredient(std::string ingredient) {
 
 bool AlchemyWorkshop::DispensePotion(string name) {
     if (potionStock_.find(name) == potionStock_.end()) {
-        std::cout << "❌ 제작소에 등록되지 않은 포션입니다." << std::endl;
+        std::cout << "제작소에 등록되지 않은 포션입니다." << std::endl;
         return false;
     }
 
     if (potionStock_[name] <= 0) {
-        std::cout << "❌ [제조 실패] " << name << "의 재고가 부족합니다! (현재 재고: 0)" << std::endl;
+        std::cout << "[제조 실패] " << name << "의 재고가 부족합니다! (현재 재고: 0)" << std::endl;
         return false;
     }
 

@@ -37,12 +37,12 @@ void battle(player* p, monster* m)
 				//p->useItem(itemIndex);
 			}
 			else {
-				cout << "❌ 잘못된 번호입니다." << endl;
+				cout << "잘못된 번호입니다." << endl;
 			}
 			break;
 		}
 		default:
-			cout << "❌ 잘못된 번호입니다!" << endl;
+			cout << "잘못된 번호입니다!" << endl;
 			continue;
 		}
 		cout << endl;
