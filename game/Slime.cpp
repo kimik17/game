@@ -21,5 +21,18 @@ Slime::Slime()
 
 void Slime::attack(class player* target)
 {
-	cout << "슬라임이 산성 침을 발사했다";
+	int mhp = target->gethp();
+	int damage = power - target->getdefence();
+	if (damage <= 0) damage = 1;
+
+	target->sethp(target->gethp() - damage);
+	cout << "슬라임이 산성 침을 발사했다" << endl;
+	cout << damage << "의 피해를 입었다." << endl;
+	if (target->gethp() <= 0) {
+		cout << target->getname() << " HP: " << mhp << "->" << target->gethp() << " (사망)" << endl;
+	}
+	else {
+		cout << target->getname() << " HP: " << mhp << "->" << target->gethp() << endl;
+	}
+	cout << endl;
 }

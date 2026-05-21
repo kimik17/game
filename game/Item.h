@@ -11,5 +11,9 @@ struct Item
 {
 	string name;
 	int price;
+	int type;
 };
 
+inline bool compareByPrice(const Item& a, const Item& b) {
+	return a.price < b.price;
+}

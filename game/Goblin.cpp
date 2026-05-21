@@ -1,5 +1,5 @@
-#include "monster.h"
 #include "Goblin.h"
+#include "player.h"
 #include <string>
 
 Goblin::Goblin()
@@ -25,5 +25,18 @@ Goblin::Goblin()
 
 void Goblin::attack(class player* target)
 {
+	int mhp = target->gethp();
+	int damage = power - target->getdefence();
+	if (damage <= 0) damage = 1;
+
+	target->sethp(target->gethp() - damage);
 	cout << "고블린이 검을 휘둘렀다" << endl;
+	cout << damage << "의 피해를 입었다." << endl;
+	if (target->gethp() <= 0) {
+		cout << target->getname() << " HP: " << mhp << "->" << target->gethp() << " (사망)" << endl;
+	}
+	else {
+		cout << target->getname() << " HP: " << mhp << "->" << target->gethp() << endl;
+	}
+	cout << endl;
 }

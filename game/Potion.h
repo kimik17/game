@@ -1,7 +1,8 @@
 #pragma once
-#include<iostream>
-#include<string>
+#include <iostream>
+#include <string>
 #include <vector>
+#include <map>
 #include "Item.h"
 #include "player.h"
 using std::cout;
@@ -15,9 +16,14 @@ struct PotionRecipe {
     Item resultPotion;
 };
 
+void setPotion(int count, int* p_HPPotion, int* p_MPPotion);
+
 class AlchemyWorkshop {
 private:
     std::vector<PotionRecipe> recipes;
+
+    std::map<string, int> potionStock_;
+    const int MAX_STOCK = 3;
 
 public:
     AlchemyWorkshop();
@@ -26,5 +32,9 @@ public:
     void SearchByName(string name);
     void SearchByIngredient(string ingredient);
 
+    bool DispensePotion(string name);
 
+    void ReturnPotion(string name);
+
+    int GetStock(string name);
 };

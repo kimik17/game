@@ -134,6 +134,7 @@
     <ClCompile Include="magician.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="monster.cpp" />
+    <ClCompile Include="MyVector.cpp" />
     <ClCompile Include="player.cpp" />
     <ClCompile Include="Potion.cpp" />
     <ClCompile Include="Slime.cpp" />
@@ -148,6 +149,7 @@
     <ClInclude Include="Item.h" />
     <ClInclude Include="magician.h" />
     <ClInclude Include="monster.h" />
+    <ClInclude Include="MyVector.h" />
     <ClInclude Include="player.h" />
     <ClInclude Include="Potion.h" />
     <ClInclude Include="Slime.h" />
